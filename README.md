@@ -1,5 +1,11 @@
 # Social Login with Passport.js
 
+## Read More
+For a detailed guide on setting up social login with Passport.js, check out my article on Medium by clicking:
+
+[![Social Login with Passport.js](https://miro.medium.com/v2/resize:fit:786/format:webp/1*y3cku4be4K1hXdlHdf_WLg.jpeg)](https://medium.com/@Wajahat_Hussain_/streamlining-social-authentication-in-node-js-with-passport-js-6f3bcb6659be)
+
+
 ## Overview
 This repository provides a comprehensive implementation of social login using Passport.js for various platforms, including Facebook, Instagram, Google, Twitter, Discord, and LinkedIn. It is designed for Node.js applications to ensure a smooth authentication process across multiple social platforms.
 
@@ -88,11 +94,6 @@ This repository provides a comprehensive implementation of social login using Pa
 - **LinkedIn**: `/auth/linkedin`
 
 Each route will redirect to the corresponding OAuth provider's login page. After successful authentication, users will be redirected back to the specified callback URL.
-
-## Read More
-For a detailed guide on setting up social login with Passport.js, check out my article on Medium:
-
-[![Social Login with Passport.js](https://miro.medium.com/v2/resize:fit:786/format:webp/1*y3cku4be4K1hXdlHdf_WLg.jpeg)](https://medium.com/@Wajahat_Hussain_/streamlining-social-authentication-in-node-js-with-passport-js-6f3bcb6659be)
 
 ### Contributing
 Feel free to submit issues or pull requests. We welcome contributions from the community!
