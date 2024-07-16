@@ -45,6 +45,18 @@ const UserPage = () => {
     navigate(`/`);
   };
 
+  // Function to copy text to clipboard
+  const copyToClipboard = (text) => {
+    navigator.clipboard
+      .writeText(text)
+      .then(() => {
+        alert("Access token copied to clipboard");
+      })
+      .catch((err) => {
+        console.error("Failed to copy: ", err);
+      });
+  };
+
   return (
     <>
       <div className="Main">
@@ -58,6 +70,12 @@ const UserPage = () => {
               <span>Welcome,</span>
               <span>{user.userName}</span>
               <p className="job">Email: {user.email}</p>
+              <p className="job">
+                Access Token: {user.accessToken.substring(0, 10)}...{" "}
+                <button onClick={() => copyToClipboard(user.accessToken)}>
+                  Copy
+                </button>
+              </p>
               <button onClick={submitLogout}>logout</button>
             </>
           ) : (

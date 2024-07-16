@@ -26,7 +26,7 @@
   align-self: flex-end;
 }
 
-.flex-column > label {
+.flex-column>label {
   color: #151717;
   font-weight: 600;
 }
@@ -96,7 +96,7 @@
   justify-content: space-between;
 }
 
-.flex-row > div > label {
+.flex-row>div>label {
   font-size: 14px;
   color: black;
   font-weight: 400;
@@ -129,6 +129,7 @@
   font-size: 14px;
   margin: 5px 0;
 }
+
 .social {
   margin-top: 10px;
   width: 100%;
@@ -161,7 +162,7 @@
 
 .card {
   width: 330px;
-  height: 350px;
+  height: 400px;
   background-image: linear-gradient(144deg, #8608b4, #492fed 60%, #bd6fda);
   border: none;
   border-radius: 10px;
@@ -225,8 +226,26 @@
   color: #ffffff;
 }
 
+.job {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
 
+.copy-button {
+  margin-left: 10px;
+  padding: 2px 8px;
+  font-size: 0.9rem;
+  background-color: #dee6ee;
+  color: #181515;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
+.copy-button:hover {
+  background-color: #c4d4e0;
+}
 
 .button2 {
   display: inline-block;
